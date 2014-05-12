@@ -14,7 +14,7 @@ public:
 	void * NewLink();
 	void Recycle(void * link);
 private:
-	Link * _p;
+	Link * _p;//Like the head link node
 };
 
 /*
@@ -123,6 +123,7 @@ void* FreeList::NewLink()
 
 void FreeList::Recycle(void *mem)
 {
+	//头插法，将要删除的Link添加到头部
 	Link* link = static_cast<Link *>(mem);
 	link->_pNext = _p;
 	_p = link;
