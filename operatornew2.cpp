@@ -47,3 +47,13 @@ void* LinkAllocator::NewLink()
 	_p = _p->_pNext;
 	return mem;
 }
+
+void LinkAllocator::Purge()
+{
+	while(_blocks != 0)
+	{
+		char* mem = reinterpret_cast<char *>(_blocks);
+		_blocks = _blocks->Next();
+		::delete [] mem;
+	}
+}
