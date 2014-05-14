@@ -39,6 +39,14 @@ int main()
 	IntSet set2(reverse_order);
 	file(set2);
 	copy(set2.begin(), set2.end(), ostream_iterator<int>(cout, " "));
+	if(reverse_order == Runtime<int>())
+	{
+		cout<<"Order Same!!"<<endl;
+	}
+	else
+	{
+		cout<<"Order not same!!"<<endl;
+	}
 	return 0;
 }
 void file(IntSet & set)
