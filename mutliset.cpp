@@ -11,9 +11,9 @@ public:
 private:
 	cmp_mode mode;
 public:
-	Runtime(cmp_mode m = normal):mode(m){}
+	Runtime(cmp_mode m = normal):mode(m){}//默认为正常排序（从小到大）
 
-	bool operator()(const T &t1, const T &t2)
+	bool operator()(const T &t1, const T &t2)//函数对象
 	{
 		return mode == normal? t1 < t2: t2 < t1;
 	}
@@ -30,7 +30,7 @@ void file(IntSet & set);
 
 int main()
 {
-	cout<<sizeof("hello")<<endl;
+	cout<<sizeof("hello")<<endl;//6
 	IntSet set1;
 	file(set1);
 	copy(set1.begin(), set1.end(), ostream_iterator<int>(cout, " "));
