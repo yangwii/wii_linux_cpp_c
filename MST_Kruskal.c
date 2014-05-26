@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define n 9
+#define n 9 //总共有9个顶点
 #define max 100
 
 struct _edge{
@@ -89,13 +89,13 @@ int main(int argc, char *argv[])
 		qsort(e, k, sizeof(edge), cmp);
 		for(i = 0; i < k; i++)
 		{
-				x = findset(e[i].u);
-				y = findset(e[i].v);
+				x = findset(e[i].u);//判断u，v是否属于同一个树
+				y = findset(e[i].v);//如果不属于， 则加入，如果是，如果加入，将形成环
 				if(x != y)
 				{
 						unionset(x, y);
 						sum += e[i].value;
-						p[h++] = i;
+						p[h++] = i;//记录加入树的每条边
 				}
 		}
 		printf("The value of MST is:%d.\n", sum);
