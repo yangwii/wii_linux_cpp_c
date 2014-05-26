@@ -95,7 +95,7 @@ int main(int argc, char *argv[])
 				{
 						unionset(x, y);
 						sum += e[i].value;
-						p[h++] = i;
+						p[h++] = i;//记录加入树的每条边
 				}
 		}
 		printf("The value of MST is:%d.\n", sum);
