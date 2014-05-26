@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define n 9
+#define n 9 //总共有9个顶点
 #define max 100
 
 struct _edge{
