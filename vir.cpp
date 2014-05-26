@@ -8,7 +8,7 @@ public:
 		virtual ~awov() = 0;
 };
 
-awov::~awov()
+awov::~awov()//纯虚也可以有是实现
 {
 	cout<<"Base"<<endl;
 }
