@@ -89,8 +89,8 @@ int main(int argc, char *argv[])
 		qsort(e, k, sizeof(edge), cmp);
 		for(i = 0; i < k; i++)
 		{
-				x = findset(e[i].u);
-				y = findset(e[i].v);
+				x = findset(e[i].u);//判断u，v是否属于同一个树
+				y = findset(e[i].v);//如果不属于， 则加入，如果是，如果加入，将形成环
 				if(x != y)
 				{
 						unionset(x, y);
