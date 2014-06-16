@@ -4,6 +4,7 @@
 
 void shellsort_1(int s[], int n);
 void shellsort_2(int s[], int n);
+void shellsort_3(int s[], int n);//此算法来自Wikipeida
 
 int main(int argv, char **argc)
 {
@@ -33,6 +34,15 @@ int main(int argv, char **argc)
 	shellsort_2(s, 10);
 
 	printf("after SORT_2:  ");
+	for(int i = 0; i < 10; i++)
+	{
+		printf("%d\t", s[i]);
+	}
+	printf("\n");
+
+	shellsort_3(s, 10);
+
+	printf("after SORT_3:  ");
 	for(int i = 0; i < 10; i++)
 	{
 		printf("%d\t", s[i]);
@@ -80,5 +90,30 @@ void shellsort_2(int s[], int n)
 			}
 			s[j + gap] = tmp;
 		}
+	}
+}
+
+void shellsort_3(int s[], int n)
+{
+	int i, j, gap, tmp;
+	while(gap <= n)
+	{
+		gap = gap * 3 + 1;
+	}
+
+	while(gap > 0)
+	{
+		for(i = gap; i < n; i++)
+		{
+			j = i - gap;
+			tmp = s[i];
+			while(j >= 0 && s[j] > tmp)
+			{
+				s[j + gap] = s[j];
+				j = j - gap;
+			}
+			s[j + gap] = tmp;
+		}
+		gap = (gap - 1) / 3;
 	}
 }
