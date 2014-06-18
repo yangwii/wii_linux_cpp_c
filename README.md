@@ -1,0 +1,29 @@
+##yangpeng cpp programs
+###各个文件及目录的说明：
+- mutliset.cpp-->STL set的用法，及函数对象的使用，自定义set中的排列顺序
+- reversestack.cpp--->用递归的方法将stack中的int
+- BFS.cpp---> 广度优先遍历
+- gdd.c---->无聊的练习
+- sizeof.c-->操作符sizeof的练习
+- int_2_str.cpp--->利用STL将int转换为string类型
+- negchar.cc--->char值可能为负数，应先强制转换为unsigned char，而不是 unsigned int
+- sort02.cc--->使用heapsort对4GiB的文件进行排序
+- joseph.c -->约瑟夫环的问题
+- next_permutation.cpp--->利用STL中next_permutaion进行全排列
+- btree.cpp--->B树
+- list.c-->链表的相关操作，创建，插入，反转
+- observe.cpp-->观察者设计模式
+- stream.cpp-->istringstream
+- callfun.cpp---->函数对象
+- main.c-->指针练习
+- operaornew.cpp--->operator new的使用，实现内存池
+- template.cpp--->模板，ostringstream
+- cppprimer.cpp--->STL练习
+- MergeN.cc MergeN.cpp --->sort02.c的模拟
+- partion.cc --->利用STL partition()
+- tree.c--->二叉树的建立
+- unique_sapce.c ---> 利用STL unique()的方法去除连续的空白
+- rediscpp.cpp redistest.cpp--->Redis的测试程序
+- MST_Kruskal.c---->Kruskal最小树生成法
+- MST_Prime.c--->Prime最小树生成法
+- vir.cpp---->练习 虚函数
