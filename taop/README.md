@@ -7,5 +7,7 @@
 - rotatestr_2.c---->旋转字符串2--->效率更高
 - wordreverse.c---->"I am a student"--->"student a am I"
 - containstr.c---->字符串包含
+- longestpalindrome.c---->最长回文子串的常规解法。
+- manacher.c---->最长回文子串的Manacher解法。
 
 
