@@ -53,9 +53,9 @@ node *reverselist(node* head)
 
 void walklist(node *head)
 {
-	node *slow = head->next;
+	node *slow = head->next;//使用快慢指针
 	node *fast = head->next;
-	node *preslow = slow;
+	node *preslow = slow;//slow用于处理节点个数奇偶数的问题
 
 	if(fast->next == NULL)
 	{
@@ -88,11 +88,11 @@ void walklist(node *head)
 	node *mid = NULL;
 	if(fast != NULL)
 	{
-		mid = reverselist(slow);
+		mid = reverselist(slow);//奇数个节点，slow相当于头节点
 	}
 	else
 	{
-		mid = reverselist(preslow);
+		mid = reverselist(preslow);//偶数个节点
 	}
 	printlinkedlist(mid);
 
