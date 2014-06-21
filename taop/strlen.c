@@ -30,7 +30,7 @@ void __strlen(char *s, int len)
 		printf("%d\n", len);
 		return;
 	}
-	__strlen(s + 1, len + 1);
+	__strlen(s + 1, len + 1);//不能写成_strlen(s++); 不然会core dump
 }
 
 void printStrReverse(char *s)
