@@ -9,5 +9,6 @@
 - containstr.c---->字符串包含
 - longestpalindrome.c---->最长回文子串的常规解法。
 - manacher.c---->最长回文子串的Manacher解法。
+- strlen.c---->1,从尾到头输出一个字符串;2,定义一个函数求字符串的长度，要求该字符串内不能有任何变量声明。
 
 
