@@ -39,7 +39,7 @@ bool stringContain_1(char *s, char *r)
 	{
 		while((pa < strlen(s)) && (s[pa] < r[pb]))
 		{
-			pa++;
+			pa++;//此处很巧妙，因为已经排过顺序，如果s[pa] < r[pb],pa前的就不需要再与r比较了
 		}
 
 		if(pa >= strlen(s) || (s[pa] > r[pb]))
