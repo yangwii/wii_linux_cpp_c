@@ -33,7 +33,7 @@ void calcAllPermutation(char *perm, int from, int to)
 		{
 			swap(perm, j, from);
 			calcAllPermutation(perm, from + 1, to);
-			swap(perm, j, from);//将字符串回复，连续两次交换等于没有交换。
+			swap(perm, j, from);//将字符串恢复原状，连续两次交换等于没有交换。
 		}
 	}
 }
