@@ -49,8 +49,8 @@ int strToInt(const char *str)
 			break;
 		}
 		else if(sign < 0 && (n > (unsigned)MIN_INT / 10) || (n == (unsigned)MIN_INT / 10 && c > 
-								(unsigned)MAX_INT % 10))
-		{
+								(unsigned)MIN_INT % 10))
+		
 			n = MIN_INT;
 			break;
 		}
