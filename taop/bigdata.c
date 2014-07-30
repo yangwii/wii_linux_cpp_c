@@ -10,7 +10,7 @@ int main(int argc, char **argv)
 	int v;
 	while(scanf("%d", &v) != EOF)
 	{
-		bit[v/int_len] != (1 << (v%int_len));
+		bit[v/int_len] |= (1 << (v%int_len));
 	}
 
 	bool found = false;
