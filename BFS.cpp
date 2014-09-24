@@ -48,7 +48,10 @@ public:
 	void AddSingleEdge(int start, int end, int value = 1)
 	{
 		Edge *newEdge = new Edge(start, end, value);
-		if(v[start].head == NULL || v[start].head->end > end)
+		/*
+		 添加新的边，start都是相同的，按照end的大小来进行边的插入
+		*/
+		if(v[start].head == NULL || v[start].head->end > end) //直接在头部插入
 		{
 			newEdge->next = v[start].head;
 			v[start].head = newEdge;
@@ -62,7 +65,7 @@ public:
 				pre = e;
 				e = e->next;
 			}
-			if(e != NULL && e->end == end)
+			if(e != NULL && e->end == end)//重复插入，直接返回
 			{
 				delete newEdge;
 				return;
