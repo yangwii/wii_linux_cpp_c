@@ -46,7 +46,7 @@ void min_heapify(int *heap, int *key, int root)
 		{
 				smallest = root;
 		}
-		if(r < heap_size(heap) && key[heap[r]] < heap[heap[smallest]])
+		if(r < heap_size(heap) && key[heap[r]] < key[heap[smallest]])
 		{
 				smallest = r;
 		}
