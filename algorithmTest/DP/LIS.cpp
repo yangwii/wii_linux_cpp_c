@@ -13,11 +13,11 @@ using namespace std;
 int main(){ 
 	int v[6] = {5, 3, 4, 8, 6, 7};
 	int max[6];
-	fill(max, max + 6, INT_MIN);
+	fill(max, max + 6, 1);
 	max[0] = 1;
 	for(int i = 1; i < 6; i++){ 
 		for(int j = 0; j < i; j++){ 
-			if(v[i] => v[j] && max[i] < max[j] + 1){ 
+			if(v[i] >= v[j] && max[i] < max[j] + 1){ 
 				max[i] = max[j] + 1;
 			}
 		}
