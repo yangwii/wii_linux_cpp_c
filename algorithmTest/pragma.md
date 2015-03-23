@@ -5,7 +5,7 @@
 //搜狗2015研发笔试
 //64位机器
 #include <iostream>
-#pragma pack(*)
+#pragma pack(8)
 
 class Base{ 
 public:
@@ -29,3 +29,8 @@ int main(){
 #####    对结构总大小的约束
 - 如果n大于所有成员变量类型所占用的字节数，那么结构的总大小必须为占用空间最大的变量占用
 的空间数的倍数；否则必须为n的倍数。
+
+
+### 参考链接
+
+[csdn](http://blog.csdn.net/jamesf1982/article/details/4375719)
