@@ -5,3 +5,4 @@
 - twoStack2Queue.cpp 百度面试题：用两个栈实现队列
 - RoateArray.cpp   去哪儿网笔试题  Leetcode 33 原题（Search in Rotated Sorted Array）
 - DecodeStr.cpp    去哪儿网笔试题
+- usefullCodePart.cpp  有用的代码段
